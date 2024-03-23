@@ -1,0 +1,89 @@
+@import url("./fonts/fonts.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "MTN Brighter Sans", sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.container {
+  @apply mx-auto w-10/12;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+.baseinput-label {
+  @apply font-bold;
+}
+
+.error {
+  @apply text-red-600 font-bold  
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  /* Remove the default checkbox appearance */
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 9px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  /* Défini la couleur de la coche */
+  background-color: #fff;
+}
+
+/* Défini la couleur de la coche lorsque la case est cochée */
+input[type="checkbox"]:checked::before {
+  /* Défini le contenu de la coche */
+  content: '\2713';
+  color: white;
+  text-align: center;
+  background-color: #000;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  /* Remove the default radio button appearance */
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked {
+  border: 4px solid #000;
+}
+.button,
+button {
+  cursor: pointer;
+}
