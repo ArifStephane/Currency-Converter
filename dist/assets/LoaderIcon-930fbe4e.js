@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as o}from"./index-c84a3199.js";const c={},n={class:"rounded-full border-t-2 border-l-2 animate-spin w-full min-w-[16px] min-h-[16px] aspect-square border-[#EDF9F0]"};function s(t,a){return r(),o("div",n)}const _=e(c,[["render",s]]);export{_ as default};
